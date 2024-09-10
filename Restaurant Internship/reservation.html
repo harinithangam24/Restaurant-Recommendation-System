@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+    <title>Reservation form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Reservation</h1>
+        <form action="" onsubmit="showPopup(event)">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email Address">
+            <input type="tel" placeholder="Phone Number">
+            <input type="number" placeholder="No of persons">
+            <input type="datetime-local" id="date">
+            <input type="text" placeholder="Special notes">
+
+
+            
+            <br><br>
+            <button>Reserve</button>
+            <p>Further enqueries <a href="#">Contact here</a></p>
+            <a href="Home.html">Back Home</a>
+        </form>
+    </div>
+    <script>
+        function showPopup(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Reservation successful!");
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<style>
+    body {
+        background:#333;
+        font-family: "Froancois One";
+        text-align: center;
+    }
+
+    .container {
+        background-color: rgb(123, 119, 119);
+        padding: 40px;
+        border-radius: 35px;
+        width: 400px;
+        margin: auto;
+        margin-top: 6cm;
+        position:fixed;
+        top:-180px;
+        left:550px;
+    }
+
+    input {
+        display: inline-block;
+        padding: 14px;
+        width: 250px;
+        border-radius: 12px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 1px solid grey;
+    }
+
+    button{
+        display: inline-block;
+        padding: 10px;
+        width: 250px;
+        height: 60px;
+        border-radius: 25px;
+        background-color: rgba(54, 18, 255, 0.767);
+    }
+    button:hover {
+           
+           background-color: #d8ccd7;
+           color: #524c3b;
+       }
+
+    a{
+        text-decoration: none;
+    }
+    <button onclick="selectOption()">Select</button>
+</style>
